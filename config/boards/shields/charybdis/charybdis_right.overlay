@@ -67,11 +67,11 @@
     device = <&trackball>;
 
     /* base processor chain on all layers */
-    input-processors = <&zip_xy_scaler 6 5>; // , <&zip_temp_layer MOUSE 400>
+    input-processors = <&zip_xy_scaler 6 5>; // , <&zip_temp_layer 5 400>
 
     /* layer-8 scroll override */
     scroller: scroller {
-        layers           = <SCROLL>;
+        layers = <7>;
         input-processors = <
             &zip_xy_to_scroll_mapper                         // Converts XY movement to scroll events
             &zip_scroll_scaler 1 6                           // Scales the scroll speed (e.g., 1/6 speed)
